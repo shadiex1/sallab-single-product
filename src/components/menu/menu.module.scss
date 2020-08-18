@@ -1,0 +1,99 @@
+.menu{   
+    background:  var(--white-color) ;
+   z-index: 3;
+            
+    overflow: hidden;
+    border: transparent;
+    outline: transparent;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   
+   .navbar{
+   display: flex;
+   width: 70%;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   z-index: 30 !important;  
+    border-bottom: 1px solid #EAEAEA;
+
+   .logo{
+    
+       
+       img{
+           object-fit: contain;
+           width: 7rem;
+           height: 5rem;
+       }
+       a{
+           text-decoration: none;
+       }
+   }
+   .icons{
+       cursor: pointer;
+       .icon{
+           display: inline-block;
+           height: 2rem;
+           text-align: center;
+       }
+       svg{
+           margin-right: 1.2rem;
+           width: 1.5rem;
+           
+           path{
+               fill: var(--black-color);
+          }
+   
+       }
+   }
+}
+.NavLinks{
+    width: 70%;
+    margin: 0 auto;
+    
+    ul{
+        width: 50%;
+        margin: auto;
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin: 1rem 2rem;
+            color: var(--light-black-color);
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+}
+}
+
+@media screen and (max-width:1300px){
+   .menu{
+       .navbar{
+           width: 95%;
+           .links{
+               margin: 0;
+           }
+       }
+   }
+}
+@media screen and (max-width:800px){
+   .menu{
+       .navbar{
+           width: 95%;
+           .links{
+               display: none;
+           }
+       }
+   }
+}
+@media screen and (max-width:500px){
+   .menu{
+       .navbar{
+           .usericon{
+               display: none;
+           }
+       }
+   }
+}

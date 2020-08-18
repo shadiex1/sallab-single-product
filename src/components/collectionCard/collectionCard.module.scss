@@ -1,0 +1,26 @@
+.card{
+    box-shadow: 0 0 6px rgba($color: #000000, $alpha: .16);
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    img{
+        width: 100%;
+        height: 60%;
+        object-fit: contain;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;    
+        padding: .5rem;
+            max-height: 3rem;
+
+        span{
+            font-weight: bold;
+        }
+        img{
+            width: 13%;
+        }
+    }
+}

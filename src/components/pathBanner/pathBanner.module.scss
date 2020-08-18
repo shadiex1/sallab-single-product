@@ -1,0 +1,23 @@
+.banner{
+    background-color: #e8e8e8;
+    margin-bottom: 3rem;
+    .path{
+        width: 70%;
+        margin: 0 auto;
+        ul{
+            margin: 0;
+        }
+            span{
+                color: #828282;
+                margin: .3rem;
+                display: inline-block;
+                text-transform: capitalize;
+                .slash{
+                    color: #BEBEBE;
+                }
+
+               
+            }
+        
+    }
+}

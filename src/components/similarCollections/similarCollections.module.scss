@@ -1,0 +1,44 @@
+.collections{
+    background-color: #F5F5F5;
+
+}
+
+.container{
+    width: 70%;
+    margin: 2rem auto;
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+}
+
+li{
+    outline: none;
+}
+
+.next{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transform: translateX(100px);
+    cursor: pointer;
+    svg{
+        path{
+            fill: var(--light-black-color);
+        }
+    }
+}
+
+.prev{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transform: translateX(-100px);
+    cursor: pointer;
+    svg{
+        path{
+            fill: var(--light-black-color);
+        }
+    }
+}

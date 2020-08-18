@@ -1,0 +1,126 @@
+.collectionOverview{
+    background-color: #F5F5F5;
+    margin-bottom: 3rem;
+}
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    color: #333;
+    background: #419be0;
+  }
+.board{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    background-color: var(--white-color);
+    .collectionInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                h3{
+                    font-size: 1.5rem;
+                    color: var(--light-black-color);
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                p{
+                    color: #666666;
+                }
+            }
+            .brand{
+                display: flex;
+                flex-direction: column;
+                img{
+                    object-fit: contain;
+                    margin-bottom: .5rem;
+                    color: var(--light-black-color);
+                }
+            }
+        }
+        .description{
+            p{
+                color: var(--light-black-color);
+            }
+        }
+        .social{
+            display: flex;
+            align-items: center;
+
+            span{
+                color: #AAAAAA;
+                font-size: 1.5rem;
+                opacity: .5;
+                margin-bottom: .2rem;
+            }
+            svg{
+                margin: .5rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .imgSlider{
+        position: relative;
+        img{
+            height: 100%;
+            z-index: -1;
+        }
+       
+        .toursBtn{
+            position: absolute;
+            top: 90%;
+            left: 35%;
+            display: inline-block;
+            padding: .1rem .1rem;
+            background-color: var(--white-color);
+
+            color: #FFFFFF;
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            
+           cursor: pointer;
+            span{
+                margin-right: 1rem;
+            }
+            svg{
+                width: 2.5rem;
+            }
+            button{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                border-radius: 20px;
+                padding: 0 1rem;          
+                 outline: none;
+
+                background-color: var(--light-black-color);
+                color: var(--white-color);
+                
+                 display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: var(--primary-color);
+
+            }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+.board{
+    width: 100%;
+    flex-direction: column;
+    .imgSlider{
+        margin: auto;
+    }
+}
+}
